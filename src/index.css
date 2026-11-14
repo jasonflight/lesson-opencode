@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-mist font-body text-ink antialiased dark:bg-ink-950 dark:text-mist;
+  }
+
+  ::selection {
+    @apply bg-mint-300 text-ink-900;
+  }
+
+  :target {
+    scroll-margin-top: 6rem;
+  }
+}

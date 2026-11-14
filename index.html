@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant" class="scroll-smooth motion-reduce:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cute lab｜心靈支持，陪你慢慢走出低谷</title>
+    <meta
+      name="description"
+      content="cute lab 是一個溫柔的心靈支持空間。透過一對一傾聽、小組陪伴與日常練習，陪心情跌落低谷的你，一點一點找回自己的節奏。免費 20 分鐘初次對話，全程保密。"
+    />
+    <meta name="author" content="cute lab" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F2F8F8" />
+    <link rel="canonical" href="https://cutelab.example/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="cute lab" />
+    <meta property="og:locale" content="zh_HK" />
+    <meta property="og:title" content="cute lab｜心靈支持，陪你慢慢走出低谷" />
+    <meta
+      property="og:description"
+      content="try and error 都可以。透過一對一傾聽、小組陪伴與日常練習，陪你把心情慢慢放回原位。"
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta property="og:image:alt" content="晨光下在水邊靜坐的人" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="cute lab｜心靈支持，陪你慢慢走出低谷" />
+    <meta
+      name="twitter:description"
+      content="try and error 都可以。心靈支持，從一個深呼吸開始。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400..700;1,400..600&family=Nunito:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Set the theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("cutelab-theme");
+          var dark = stored
+            ? stored === "dark"
+            : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (dark) {
+            document.documentElement.classList.add("dark");
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute("content", "#061829");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "cute lab",
+        "slogan": "try and error",
+        "description": "cute lab 是一個溫柔的心靈支持空間，透過一對一傾聽、小組陪伴與日常練習，陪伴心情低落的人慢慢找回生活節奏。",
+        "url": "https://cutelab.example/",
+        "email": "hello@cutelab.hk",
+        "areaServed": "Hong Kong",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hong Kong",
+          "addressRegion": "Central and Western District"
+        },
+        "sameAs": ["https://www.instagram.com/cutelab.hk"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
