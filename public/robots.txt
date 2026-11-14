@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cutelab.example/sitemap.xml
+Sitemap: https://jasonflight.github.io/lesson-opencode/sitemap.xml
